@@ -13,7 +13,7 @@ async function update() {
     if(response.ok) {
         let result = await response.json();
         console.log(result);
-        moveSun(result.sun_x*2, result.sun_y);
+        moveSun(result.sun_x*2, result.sun_y*2);
         current.innerHTML = result.stats.current_power_kw;
     }
     return {};

@@ -17,7 +17,6 @@ def get():
             'total_power_today_kwh': 123,
             'total_power_kwh': 123,
             }
-    time = Time('2023-10-04 10:00')
     time = Time.now()
     normalized_time = (time.datetime.time().hour * 60 + time.datetime.time().minute)/(60*24)-.25
     loc = coord.EarthLocation(lon=0 * u.deg,
